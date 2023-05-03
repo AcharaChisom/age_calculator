@@ -14,6 +14,7 @@ body {
     margin: 0 auto;
     margin-top: 3rem;
     background: #fff;
+    border-radius: 24px 24px 100px 24px;
 }
 
 .container {
@@ -43,6 +44,18 @@ input {
     color: #151515;
     border: 1px solid #DCDCDC;
     border-radius: 8px;
+}
+.red {
+    color: red;
+}
+.error {
+    border-color: red;
+}
+.error-text {
+    font-size: 0.5rem;
+    font-weight: 400;
+    margin-top: 0.2em;
+    color: red;
 }
 
 .form-submit {

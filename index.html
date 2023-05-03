@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
 
   <title>Frontend Mentor | Age calculator app</title>
 
@@ -23,20 +23,23 @@
 
     <div class="container">
 
-      <form class="form">
+      <form class="form" id="form">
 
         <div class="inputs">
-          <div class="input">
+          <div class="input ">
             <label for="day" class="label">DAY</label>
-            <input type="text" id="day" class="day" placeholder="DD">
+            <input type="number" id="day" class="day" placeholder="DD">
+            <p class="error-text" id="day-error"></p>
           </div>
           <div class="input">
             <label for="month" class="label">MONTH</label>
-            <input type="text" id="month" class="month" placeholder="MM">
+            <input type="number" id="month" class="month" placeholder="MM">
+            <p class="error-text" id="month-error"></p>
           </div>
           <div class="input">
             <label for="year" class="label">YEAR</label>
-            <input type="text" id="year" class="year" placeholder="YYYY">
+            <input type="number" id="year" class="year" placeholder="YYYY">
+            <p class="error-text" id="year-error"></p>
           </div>
         </div>
 
@@ -51,9 +54,9 @@
 
       <div class="outputs">
 
-        <p class="output"><span class="val" id="val">25</span> years</p>
-        <p class="output"><span class="val" id="val">4</span> months</p>
-        <p class="output"><span class="val" id="val">12</span> days</p>
+        <p class="output"><span class="val" id="year-val">--</span> years</p>
+        <p class="output"><span class="val" id="month-val">--</span> months</p>
+        <p class="output"><span class="val" id="day-val">--</span> days</p>
 
       </div>
 
@@ -65,5 +68,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://twitter.com/Chisom14Solomon">Achara Chisom Solomon</a>.
   </div>
+
+  <script src="./index.js"></script>
 </body>
 </html>
