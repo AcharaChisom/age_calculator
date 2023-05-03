@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <main class="main">
+
+    <div class="container">
+
+      <form class="form">
+
+        <div class="inputs">
+          <div class="input">
+            <label for="day" class="label">DAY</label>
+            <input type="text" id="day" class="day" placeholder="DD">
+          </div>
+          <div class="input">
+            <label for="month" class="label">MONTH</label>
+            <input type="text" id="month" class="month" placeholder="MM">
+          </div>
+          <div class="input">
+            <label for="year" class="label">YEAR</label>
+            <input type="text" id="year" class="year" placeholder="YYYY">
+          </div>
+        </div>
+
+        <div class="form-submit">
+          <hr class="line">
+          <button type="submit" class="submit" id="submit">
+            <img src="./assets/images/icon-arrow.svg" alt="">
+          </button>
+        </div>
+
+      </form>
+
+      <div class="outputs">
+
+        <p class="output"><span class="val" id="val">25</span> years</p>
+        <p class="output"><span class="val" id="val">4</span> months</p>
+        <p class="output"><span class="val" id="val">12</span> days</p>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://twitter.com/Chisom14Solomon">Achara Chisom Solomon</a>.
+  </div>
+</body>
+</html>
