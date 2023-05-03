@@ -85,6 +85,19 @@ const dateIsValid = () => {
         monthVal.textContent = '--'
         dayVal.textContent = '--'
         return false
+    } else if((day < 1 || day > 31) || (month < 1 || month > 12) || (year > new Date().getFullYear())) {
+        hasErrorP = true
+        for(let label of labels) {
+            label.classList.add('red')
+        }
+        dayErrorText.textContent = 'Must be a valid date'
+        dayInput.classList.add('error')
+        monthInput.classList.add('error')
+        yearInput.classList.add('error')
+        yearVal.textContent = '--'
+        monthVal.textContent = '--'
+        dayVal.textContent = '--'
+        return false
     } else if((month >= 1 || month <= 12) && (day > daysOfMonths[month - 1])) {
         hasErrorP = true
         for(let label of labels) {
