@@ -12,7 +12,7 @@ body {
     width: 90%;
     max-width: 375px;
     margin: 0 auto;
-    margin-top: 3rem;
+    margin-top: 1rem;
     background: #fff;
     border-radius: 24px 24px 100px 24px;
 }
@@ -93,4 +93,36 @@ img {
 }
 .val {
     color: #854DFF;
+}
+
+@media (min-width: 1000px) {
+    .main {
+        max-width: 600px;
+    }
+    .container {
+        padding: 3rem 6rem;
+    }
+    .inputs {
+        justify-content: flex-start;
+    }
+    .input + .input {
+        margin-left: 1em;
+    }
+    .input {
+        font-weight: 700;
+        width: 25%;
+    }
+    .year {
+        width: 130%;
+    }
+    .output {
+        font-size: 4rem;
+    }
+    .submit {
+        left: 84%;
+    }
+    .error-text {
+        font-weight: 700;
+        letter-spacing: 0.05em;
+    }
 }

@@ -99,6 +99,21 @@ const dateIsValid = () => {
         dayVal.textContent = '--'
         return false
     }
+
+    if(new Date() < new Date(`${year}-${month}-${day}`)) {
+        hasErrorP = true
+        for(let label of labels) {
+            label.classList.add('red')
+        }
+        dayErrorText.textContent = 'Enter a date before today'
+        dayInput.classList.add('error')
+        monthInput.classList.add('error')
+        yearInput.classList.add('error')
+        yearVal.textContent = '--'
+        monthVal.textContent = '--'
+        dayVal.textContent = '--'
+        return false
+    }
     return true
 }
 
